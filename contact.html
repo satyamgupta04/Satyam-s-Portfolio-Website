@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Futuristic Contact Form</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .glass {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    input, textarea {
+      background-color: transparent !important;
+      border-color: rgba(255, 255, 255, 0.3) !important;
+      color: white !important;
+    }
+
+    input:focus, textarea:focus {
+      border-color: #00fff7 !important;
+    }
+
+    label {
+      color: #00fff7;
+    }
+  </style>
+</head>
+<body>
+  <form class="glass p-8 rounded-2xl shadow-lg w-full max-w-md space-y-6" style="
+    margin-top: 5rem;
+    height: 38rem;>
+    <h2 class="text-2xl text-white font-semibold text-center" style="align-items: center;">💬 Contact Us</h2>
+    
+    <div>
+      <label for="name" class="block mb-1">Name</label>
+      <input id="name" name="name" type="text" required class="w-full px-4 py-2 rounded-md border outline-none">
+    </div>
+
+    <div>
+      <label for="email" class="block mb-1">Email</label>
+      <input id="email" name="email" type="email" required class="w-full px-4 py-2 rounded-md border outline-none">
+    </div>
+
+    <div>
+      <label class="block mb-1">Gender</label>
+      <div class="flex items-center gap-4 text-white">
+        <label class="flex items-center">
+          <input type="radio" name="gender" value="male" class="mr-2"> Male
+        </label>
+        <label class="flex items-center">
+          <input type="radio" name="gender" value="female" class="mr-2"> Female
+        </label>
+      </div>
+    </div>
+
+    <div>
+      <label for="query" class="block mb-1">Your Query</label>
+      <textarea id="query" name="query" rows="4" required class="w-full px-4 py-2 rounded-md border outline-none"></textarea>
+    </div>
+
+    <button type="submit" class="w-full bg-[#00fff7] text-black font-semibold py-2 px-4 rounded-md hover:bg-cyan-400 transition-all duration-300">
+      Submit
+    </button>
+  </form>
+</body>
+</html>

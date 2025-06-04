@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: Figtree, sans-serif;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: #13145d;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+
+
+}
+
+nav li {
+    list-style: none;
+    margin: 0 25px;
+}
+
+.left {
+    font-size: 1.5rem;
+}
+
+.firstsection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 70px 0;
+
+}
+
+.firstsection>div {
+    width: 36%;
+
+}
+
+
+.leftsection {
+    font-size: 3rem;
+
+
+}
+
+.secondsection {
+    max-width: 87vw;
+    margin: auto;
+    height: 38rem;
+
+}
+
+.purple {
+    color: blueviolet;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: rgb(122, 122, 241);
+    font-size: 1.02rem;
+
+}
+
+#element {
+    font-family: Figtree, sans-serif;
+    color: #c9ac0d;
+}
+
+hr {
+    border: 0px;
+    background: rgb(255, 255, 255);
+    margin: 54px 60px;
+    height: 1.2px;
+
+}
+
+.secondsection h1 {
+    font-size: 2.5rem;
+
+}
+
+.text-gray {
+    color: gray;
+}
+
+.box {
+    background: white;
+    height: 2PX;
+    width: 85VW;
+    margin: 181px 0px;
+    display: flex;
+}
+
+.vertical {
+    width: 1px;
+    height: 93px;
+    background-color: white;
+    margin: 0px 100px;
+}
+
+.vertical img {
+    height: 70px;
+    position: relative;
+    top: -62px;
+    right: 25px;
+}
+
+.verticalheading {
+    position: relative;
+    top: 20px;
+    width: 150px;
+
+}
+
+.verticaltext {
+    position: relative;
+    top: 25px;
+    font-size: 12px;
+    width: 150px;
+    color: gray;
+}
+
+.desc {
+    margin-left: 8rem;
+    font-size: 2rem;
+}
+
+.gray2 {
+    color: gray;
+    font-size: 1.5rem;
+}
+
+.thirdsection {
+    margin-bottom: 157px;
+    width: 94rem;
+}
+
+.heading {
+    margin-bottom: 4rem;
+    color: blueviolet;
+    font-size: 3rem;
+
+}
+
+
+}
+.right{
+    margin-left: 120px;
+
+}
+.information{
+    margin-left: 100px;
+}
+.responsive-button {
+  display: inline-block;
+  background-color: #4CAF50;
+  color: white;
+  padding: 0.75em 1.5em;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.5em;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.responsive-button:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+}
+
+.responsive-button:active {
+  transform: translateY(1px);
+}
+
+.responsive-button:focus {
+  outline: 2px solid #2e7d32;
+  outline-offset: 2px;
+}
+
+
+
+
+
+
+
+.contact {
+  background-color: #4CAF50;
+  color: white;
+  padding: 0.75em 1.5em;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.5em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover and Active States */
+.contact:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+}
+
+.contact:active {
+  transform: translateY(1px);
+}
+
+/* Focus State for Accessibility */
+.contact:focus {
+  outline: 2px solid #2e7d32;
+  outline-offset: 2px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .contact {
+    font-size: 0.9rem;
+    padding: 0.65em 1.2em;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact {
+    font-size: 0.85rem;
+    padding: 0.6em 1em;
+  }
+}
+.lower {
+    
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-left: 8rem; /* You can keep this or remove as needed */
+  margin-right: 8rem;
+  flex-wrap: wrap; /* Optional: makes it responsive on smaller screens */
+  margin-bottom: 2rem;
+}
+
+.lower > div {
+  max-width: 45%; /* Adjust if needed */
+}
+
+.lower2 a {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: white;
+  text-decoration: none;
+}
+
+.lower2 a i {
+  margin-left: 0.5rem;
+}
+footer{
+    background-color: rgb(46, 46, 46);
+}
